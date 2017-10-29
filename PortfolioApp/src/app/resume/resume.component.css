@@ -1,0 +1,75 @@
+
+mat-sidenav-container{
+    height: 100vh;
+}
+.example-sidenav{
+  background-color: #334053
+}
+
+.img-head{
+  position: relative;
+  
+  /* margin-top: -70%; */
+  box-shadow: 2px 5px 2px 0 rgba(0,0,0,.34), 0 5px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.text{
+  font-size: 3vw;
+  color: rgb(215, 214, 214)
+}
+
+
+mat-grid-tile {
+  /* border: 1px solid black; */
+}
+.sid-bar-btn{
+    width: 20%;
+    float: right;
+}
+.Content
+{
+  height:auto;
+    overflow:auto;
+}
+h3{
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+.mat-toolbar{
+  background-color: #334053;
+    background: linear-gradient(0deg, rgb(44, 51, 65), rgb(74, 94, 138));
+  box-shadow: 10px 10px 100px #41404e;
+}
+
+
+mat-sidenav {
+  min-width: 20%;
+  box-shadow: 1px 1px 10px #000 !important;
+
+}
+
+.nav-info{
+  float: right;
+  padding-right: 10%;
+}
+.nav-button{
+  width: 300px;
+  background-color: unset;
+  /* border: .5px solid black; */
+  border-radius: 0px;
+  height: 50px;
+}
+.container{
+  
+    width: fit-content;
+    margin-top: 8%;
+    margin-bottom: 8%
+}
+.port-img{
+  box-shadow: 0px 0px 20px 6px rgba(0,0,0,.34), 0 5px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12)
+}
+footer{
+  height: 10vh;
+  background-color: #334053;
+    background: linear-gradient(0deg, rgb(44, 51, 65), rgb(74, 94, 138));
+  box-shadow: 10px 10px 100px #41404e;
+}

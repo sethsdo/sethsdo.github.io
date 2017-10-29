@@ -1,0 +1,262 @@
+<mat-sidenav-container>
+  <div class="container-fluid top-head">
+    <mat-toolbar class="navbar navbar-inverse navbar-fixed-top header">
+      <button type="button" mat-button (click)="sidenav.open()">
+        <mat-icon style="color: rgb(205, 202, 202)">menu</mat-icon>
+      </button>
+      <h2 class="text">Welcome</h2>
+    </mat-toolbar>
+  </div>
+  <mat-sidenav #sidenav class="example-sidenav fixed-top ">
+    <div>
+      <img src="https://static.pexels.com/photos/611328/pexels-photo-611328.jpeg" class="img-circle" alt="res" width="50" height="50">
+      <div class="nav-info">
+        <h3>Seth Olmstead</h3>
+        <h5>setholmstead@gmail.com</h5>
+      </div>
+    </div>
+    <button mat-raised-button class="nav-button">
+      <a routerLink="/">Home</a>
+    </button>
+    <br>
+    <button mat-raised-button class="nav-button">
+      <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/linkedin-32.png" alt="">
+      <a href="https://www.linkedin.com/in/seth-olmstead-ba42a0127/">LinkedIn</a>
+    </button>
+    <br>
+    <button mat-raised-button class="nav-button">
+      <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-32.png" alt="">
+      <a href="https://github.com/sethsdo">GitHub</a>
+    </button>
+    <br>
+    <button mat-raised-button class="nav-button">
+      <a routerLink="resumé">Resumé</a>
+    </button>
+  </mat-sidenav>
+  <div class="wrapper">
+    <mat-grid-list cols="1" rowHeight="3.2:1" class="">
+      <mat-grid-tile>
+        <img src="https://static.pexels.com/photos/207153/pexels-photo-207153.jpeg" class="img-responsive img-head port-img" alt="res">
+      </mat-grid-tile>
+      <img src="https://static.pexels.com/photos/611328/pexels-photo-611328.jpeg" class="img-circle main-img over-content" alt="Cinque Terre"
+        width="20%" height="60%">
+      <div class="over-text">
+        <h1 class="text" style="color: black; text-shadow: 3px 0px 5px #2b2b2b;">Fullstack Developer</h1>
+        <h3 class="text-desc">Design | Architecture | Performance</h3>
+      </div>
+    </mat-grid-list>
+  </div>
+  <hr>
+  <main id="section2" class="container-fluid">
+    <mat-grid-list cols="1" rowHeight="4:1" class="about-me">
+      <mat-grid-tile>
+        <div style="text-align:center;" class="about">
+          <h1 style="text-shadow:3px 2px 3px #988f8f;">About Me</h1>
+          <h3>~</h3>
+          <p class="">
+             My name is Seth Olmstead. I am a self-sufficient Fullstack developer living in the Washington D.C. Metro Area. I enjoy working
+            on a team and bouncing ideas off others. Challenges do not intimidate me but rather feed my curiosity to understand more.
+            I will always be learning something new because the more I learn the more I realize how much I don't know.</p>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <hr>
+    <h1 style="text-shadow:3px 2px 3px #988f8f;">Portfolio</h1>
+    <mat-tab-group class="tab-grade">
+      <mat-tab label="Tab 1">
+        <mat-grid-list cols="2" rowHeight="1.4:1">
+          <mat-grid-tile class="port-img">
+            <img src="../../assets/img/surveyApp.png" alt="img1" class="img-responsive port-img">
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div style="text-align:center;">
+              <h1 style="text-shadow:3px 2px 3px #988f8f;">Poll App</h1>
+              <hr>
+              <p class="p-about">
+                 This project is built with Angular, Express, Nodejs, and Mongo DB. It covers all the CRUD operations. On entering the app
+                the user is prompted to sign in or register, there is both backend and frontend validation. After entering the site the user
+                can create polls, vote, or delete his or her polls.
+                <a href="https://gitlab.com/sethsdo/my-poll-app">Poll App</a>
+              </p>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-tab>
+      <mat-tab label="Tab 2">
+        <mat-grid-list cols="2" rowHeight="1.5:1">
+          <mat-grid-tile class="port-img">
+            <img src="../../assets/img/travelPlanner.png" alt="img1" class="img-responsive port-img">
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div style="text-align:center;">
+              <h1 style="text-shadow:3px 2px 3px #988f8f;">Travel Planner</h1>
+              <hr>
+              <p class="p-about">
+                 The travel planner is built with Angular, Express, Nodejs, and mongo DB. It also utilizes all of the CRUD operations, has
+                login and registration. users are allowed to plan trips, join trips, and view trip details.
+                <a href="https://gitlab.com/sethsdo/trip_planner">Travel Planner</a>
+              </p>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-tab>
+      <mat-tab label="Tab 3">
+        <mat-grid-list cols="2" rowHeight="1.5:1">
+          <mat-grid-tile class="port-img">
+            <img src="../../assets/img/dojoWall1.png" alt="img1" class="img-responsive port-img" style="height: -webkit-fill-available;">
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div style="text-align:center;">
+              <h1 style="text-shadow:3px 2px 3px #988f8f;">Message Board</h1>
+              <hr>
+              <p class="p-about">
+                 Dojo Wall Message Board is built with Django, Python, and MySQL. This project features all of the CRUD operations and log
+                in and registration. Users can post messages or comment on others.
+                <a href="https://github.com/sethsdo/social-comments-and-messages">Message Board</a>
+              </p>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-tab>
+      <mat-tab label="Tab 4">
+        <mat-grid-list cols="2" rowHeight="1.5:1">
+          <mat-grid-tile class="port-img">
+            <img src="../../assets/img/hoverChange.png" alt="img1" class="img-responsive port-img">
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div style="text-align:center;">
+              <h1 style="text-shadow:3px 2px 3px #988f8f;">Hover with Jquery</h1>
+              <hr>
+              <p class="p-about">
+                 Hover in and out is a pretty simple project, it is built with HTML, CSS, and Jquery. Upon hovering over an image the image
+                seamlessly flips to another.
+                <a href="https://github.com/sethsdo/HoverInAndOut">Hover In and Out</a>
+              </p>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-tab>
+      <mat-tab label="Tab 5">
+        <mat-grid-list cols="2" rowHeight="1.5:1">
+          <mat-grid-tile class="port-img">
+            <img src="../../assets/img/pythonTemp.png" alt="img1" class="img-responsive port-img" style="height: -webkit-fill-available;">
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div style="text-align:center;">
+              <h1 style="text-shadow:3px 2px 3px #988f8f;">About Python</h1>
+              <hr>
+              <p class="p-about">
+                About python is a recreated static template built with HTML and CSS.
+                <a href="https://github.com/sethsdo/AboutPythonTemplate">About Python</a>
+              </p>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-tab>
+      <mat-tab label="View More Projects">
+        <mat-grid-list cols="1" rowHeight="3.5:1">
+          <mat-grid-tile>
+            <div style="text-align:center;">
+              <h1 style="text-shadow:3px 2px 3px #988f8f;"><a href="https://github.com/sethsdo">GitHub</a></h1>
+              <hr>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-tab>
+    </mat-tab-group>
+    <hr>
+    <mat-grid-list cols="1" rowHeight="2.3:1" class="container" style="margin-bottom: 5%" class="port-img">
+      <mat-grid-tile style="width: 100%;">
+        <div class="port-img" style="margin-right:2%; width: 30%; height: 100%">
+          <h3 style="margin:2%;">Fullstack MEAN</h3>
+          <hr>
+          <ul>
+            <li>Mongo DB / Mongoose</li>
+            <li>Express</li>
+            <li>Angular</li>
+            <li>Nodejs</li>
+          </ul>
+        </div>
+        <div class="port-img" style="margin-right:2%; width: 30%; height: 100%">
+          <h3 style="margin:2%;">Fullstack Python</h3>
+          <hr>
+          <ul>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>Django</li>
+            <li>Django ORM</li>
+            <li>MySql</li>
+          </ul>
+        </div>
+        <div class="port-img" style="width: 30%; height: 100%">
+          <h3 style="margin:2%;">Proficient In</h3>
+          <hr>
+          <ul>
+            <li>Javascript</li>
+            <li>Html5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+            <li>Angular Material</li>
+            <li>Creating/using: API</li>
+            <li>Experince with: AWS</li>
+          </ul>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-tab-group class="tab-grade">
+      <mat-tab label="Tab 1">
+        <mat-grid-list cols="1" rowHeight="2.3:1">
+          <mat-grid-tile>
+            <div class="port-img" style="width: 30%; margin: 3%;">
+              <h3 style="margin:2%;">Outdoors</h3>
+              <hr>
+              <p style="padding:5%;">I never feel as at home as when I'm in the great outdoors. Whether it's rock climbing, a quick weekend backpacking trip,
+              or just hanging out with friends around a bonfire, it is where I go to unwide and relax. </p>
+            </div>
+            <div class="port-img" style="width: 60%; float:right;">
+              <img src="https://lh3.googleusercontent.com/gISkXsJUbwSTe0EY9CdML831oawROWuvI4ROVyAhFOTje8_cshX26-8yxij1xbMoDlP7jGOhDjUatqAEP6_13bWXmNCcsm9shLS3fOyq99bqBeXYf0ZxTc9QM6KDj_LnsRwExV1G2_hisZrl4-w7esRnAExP-bLhkmFavXd_cYqFQC4ABNoCmCvWOXn_XRLmItaBIk9cs5JWR_T2lR9FvMKhvl7QpQOH84s5ZOf9Oxnqf2gWQQJs2gIOlF6bCt7kNcKgtDL19aCZR5lj5kP5wh7ViMmaK3lwodlT0lLlWb4ZHs-M8qu_aebUFb0co3KTgo67fSuyko39afFQCKLN6-DT7SDwcBsXhlvGIGe2CDTFOdsbLoDOGf2PbpkT1ZQs2Wa2WNT62nAoKCHi2a_kiyC4ia-O2Kq0z5djBgC7y1Qo7vWSGB2eUXXfYtBsanVUpFBEGIw_zcXcPjltpZgxFH6Qs8JDUT84z8aNXlSZDh5BcMwMHRLio4a8cyJL8LuNu4RF6FefruZrWeCoH7CzoUmzVJEAlCjgsjwBVchMRxUnUoPmd5pdUwQd8KWjX6ivFKuZ6v1WhbVMHth2hiRac4ynQEIm8UQ2HxhYduqZFQ=s1464-no"
+                alt="trip1" class="img-responsive">
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-tab>
+      <mat-tab label="Tab 2">
+        <mat-grid-list cols="1" rowHeight="2.3:1">
+          <mat-grid-tile>
+            <div class="port-img" style="width: 30%; margin: 3%;">
+              <h3 style="margin:2%;">My Dog</h3>
+              <hr>
+              <p style="padding:5%;">Lose is my four and a half-year-old Golden Retriever, and when not working we do most everything together.</p>
+            </div>
+            <div class="port-img" style="width: 60%; float:right;">
+              <img src="https://lh3.googleusercontent.com/MKb4GJ6SSqjxsLJN-U1DLaqecoOo7IplLg2ZSpjajCSYXQHB2J8Btnl6jJq0DZEMa3ZWuLPc1n48oGYWBkP5yJANbISsEpOpbUqF_XuU5EQloPb-HeSCGocIJYxlFyHmUdgkf2fTHuxPotJD_wsS6h31tI_Dkl4x3TeEi935koklC2I-5DXqRJrCkuBcjMsMgHJA4dyHzrehOkrR4pxizgN0SDE9sHOkUkhRSAOCePjMt5r-m8i5SHM_OpG8EhIAVd54JHGmMs37O7kUP-AlraTFAJEEY-ZToBMcqp7hkA5NyxgSCoB2jF0T-26caphnX3hoVz0Qsp9R_1YPh3skXaqCrlWlLzxnE2SHuBk2mDTNev5kwiSxn9e5DvCvUCdxsBBzJ-WLvOkp3ZbTuburtj-BYXqS7ljEhSGt7smldOKFgH47fISlCTQuQroNH7QbqNEQrEXtAURiHTwbLFhW0O-mQPOuifaMhRa3w-D5WuMObrkBJG054-Jyo8tEYkRO_3zU0IBShEJh9gJdAB6eBC1LT5j8c3JxpVZgbMPjIa17BXbydfATy_Fl74eOnX6kIGKR64HbMGfRCDJ18d4IWzTDjZ1neMHu4PP_7jo0QA=w2196-h1464-no"
+                alt="trip1" class="img-responsive">
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-tab>
+      <mat-tab label="Tab 3">
+        <mat-grid-list cols="1" rowHeight="3:1">
+          <mat-grid-tile>
+            <div class="port-img" style="width: 30%; margin: 3%;">
+              <h3 style="margin:2%;">Travel</h3>
+              <hr>
+              <p style="padding:5%;">Another one of my passions is travel, I love experiencing new places, new food, and meeting and creating new relationships.
+              Every year, I have a goal of traveling to a place I have never been before. I never want to stop exploring whether that's
+              a trip to another state, country or in my own community.</p>
+            </div>
+            <div class="port-img" style="width: 60%; float:right;">
+              <img src="https://lh3.googleusercontent.com/PzFpPqoVdSEGmMUDw14CNswuH_0IEuLR82ZeJqecoG7UWduLxwVYB9vRyoHWSKQw4nQGl6H8Q7tCPWs2xMeZNdLyfg6glTGTfYZTWYI5uH3emM6oD_PaeTBe-yFE1Z4ztZDUIQmDrLBePqkwAOlQ-U-dKDHWGzzXls6lSiuv5E9cO63I7aSmVJflh7fqWfPgVDu2sHIU-rbeN04rl8JosPAs64iyDUGnocxMupcFP3jusOtHenHuwii1dVo_gGxjRg5LMEY9iptIvIDUckcfO7unqAFut2E8pbY5k77Dj_1S_ASUf_egCKr_Pzu6IEMORPLZbhJUFaFCXRskgtwn-jWojqD2zTIsNpVIC4dB5RWKQsYZU2DibpQg0Uh_Jw0u5vGzXhLbDY-6CdDBsnDNFvJCDJr8M5luIpDZ86gYr_ykBEYhvkt04Os6sjh31Lvi79lSOGXy-8e8q9OydBov5qswbOE5ypqR9bkIoZ3j-RLagcq2g9iBGwLrIMFVdrTJe3UPvJC4B4L7Vki4PYz0o8iSpxTCiR32qKF5hNkfdEIbJPpwydrmq1lHr_4Y_QGpDll0Ghjy0yuymXfL8KZvDZkwULP3wY3psat_vufIQQ=w1952-h1464-no"
+                alt="trip1" class="img-responsive">
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-tab>
+    </mat-tab-group>
+  </main>
+  <hr>
+  <footer id="section3" class="container-fluid" style="text-align:center;">
+    <p style="padding-top:2%; font-size: small;">© 2017 Seth Olmstead Design & CO, Inc. <br>Made with Angular and Angular Material</p>
+  </footer>
+</mat-sidenav-container>

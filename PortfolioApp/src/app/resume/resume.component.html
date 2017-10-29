@@ -1,0 +1,39 @@
+<mat-sidenav-container>
+  <div class="container-fluid top-head">
+    <mat-toolbar class="navbar navbar-inverse navbar-fixed-top header">
+      <button type="button" mat-button (click)="sidenav.open()">
+        <mat-icon style="color: rgb(205, 202, 202)">menu</mat-icon>
+      </button>
+    </mat-toolbar>
+  </div>
+  <mat-sidenav #sidenav class="example-sidenav fixed-top ">
+    <div>
+      <img src="https://static.pexels.com/photos/611328/pexels-photo-611328.jpeg" class="img-circle" alt="res" width="50" height="50">
+      <div class="nav-info">
+        <h3>Seth Olmstead</h3>
+        <h5>setholmstead@gmail.com</h5>
+      </div>
+    </div>
+    <button mat-raised-button class="nav-button">
+      <a routerLink="/">Home</a>
+    </button>
+    <br>
+    <button mat-raised-button class="nav-button">
+      <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/linkedin-32.png" alt="">
+      <a href="https://www.linkedin.com/in/seth-olmstead-ba42a0127/">LinkedIn</a>
+    </button>
+    <br>
+    <button mat-raised-button class="nav-button">
+      <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-32.png" alt="">
+      <a href="https://github.com/sethsdo">GitHub</a>
+    </button>
+    <br>
+  </mat-sidenav>
+  <div class="container port-img">
+    <img src="../../assets/img/resume.png" alt="resume" class="img-responsive" style="width:60vw; height:100%"> 
+  </div>
+  <footer id="section3" class="container-fluid">
+    <p style="padding-top:2%">© 2017 Seth Olmstead Design & CO, Inc.</p>
+  </footer>
+</mat-sidenav-container>
+
